@@ -2,19 +2,20 @@
 
 //divisas
 
-int a = 0;
-int operacion, resultado; 
+int main(){
+float a, resultado;
+int operacion; 
 printf("dame la cantidad en pesos mexicanos: ");
 scanf("%f", &a);
 printf("seleccione la divisa a la que quiere convertir\n");
 printf(" 1.- Libra \n 2.- Dolar \n 3.- Euro \n");
-scanf("%f", &operacion)
+scanf("%d", &operacion);
 
 switch (operacion)
 {
 case 1:
     resultado = a * 0.036;
-    printf("El resultado es: %f * 0.036 = %df", a, resultado);
+    printf("El resultado es: %f * 0.036 = %f", a, resultado);
     break;
 case 2:
     resultado = a * 0.050;
@@ -26,7 +27,7 @@ case 3:
     break;
 
 default:
-    printf("Escoger una opcion valida")
+    printf("Escoger una opcion valida");
     break;
 }
-
+}
